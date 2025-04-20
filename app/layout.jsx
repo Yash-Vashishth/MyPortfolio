@@ -3,6 +3,7 @@ import "./globals.css";
 
 //components
 import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
 
 const jetbrains_Mono = JetBrains_Mono({
   subsets: ["latin"],
@@ -18,8 +19,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Header />
-      <body className={jetbrains_Mono.variable}>{children}</body>
+      <body className={jetbrains_Mono.variable}>
+        <Header />
+
+        <PageTransition>
+          {children}
+        </PageTransition>
+      </body>
     </html>
   );
 }
