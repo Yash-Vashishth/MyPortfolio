@@ -7,25 +7,25 @@ const services = [
   {
     num: '01',
     title: 'Web Development',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur",
+    description: "Create engaging and lively website content that allows user-experience to the maximum",
     href: " ",
   },
   {
     num: '02',
     title: 'UI/UX Design',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur",
+    description: "Create webpage designs using Figma and the likes of the tools to give shape to modern, interactive and fun webpages",
     href: " ",
   },
   {
     num: '03',
     title: 'Logo Design',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur",
+    description: "Create unique designs and logos that demonstrate the individuality that can be portrayed throughout my career",
     href: " ",
   },
   {
     num: '04',
     title: 'Technical Content Analysis/Writing',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur",
+    description: "Analyze existing content, visuals and designs and suggest workable, effective and easy solutions to help in the growth of the receiving end",
     href: " ",
   },
 ];
@@ -52,16 +52,16 @@ const Services = () => {
                 {/*top*/}
                 <div className="w-full flex justify-between items-center">
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">{service.num}</div>
-                  <Link href={service.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition all  ">
-                    <BsArrowDownRight />
+                  <Link href={service.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
+                    <BsArrowDownRight className="text-primary text-3xl "/>
                   </Link>
                 </div>
 
                 {/*heading */}
-                <h2>{service.title}</h2>
+                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">{service.title}</h2>
 
                 {/*description*/}
-                <p>{service.description}</p>
+                <p className="text-white/60 ">{service.description}</p>
                 
                 {/*border*/}
                 <div className="border-b border-white/20 w-full "></div>
