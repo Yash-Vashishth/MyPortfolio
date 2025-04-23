@@ -1,11 +1,13 @@
 import { Button } from '../components/ui/button';
 import { FiDownload } from 'react-icons/fi';
 import React from 'react';
-
+import Link from 'next/link';
 import Social from '../components/Social';
 import Photo from '../components/Photo';
 import Stats from "../components/Stats";
-
+const link = {
+  path: '/assets/YashFinal.pdf'
+}
 const Home = () => {
   return (
     <section className='h-full'>
@@ -25,7 +27,7 @@ const Home = () => {
             {/*btn and socials*/}
             <div className='flex flex-col xl:flex-row items-center gap-8'>
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                <span>Download CV</span>
+                <span><Link href={link.path}>Download CV</Link></span>
                 <FiDownload className='text-xl' />
               </Button>
               <div className='mb-8 xl:mb-0'>
