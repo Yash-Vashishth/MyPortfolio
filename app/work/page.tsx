@@ -95,7 +95,7 @@ const Work = () => {
               <div className='border border-white/20'></div>
 
               {/* buttons */}
-              <div className='flex items-center gap-4 sm:mb-12'>
+              <div className='flex items-center gap-4 sm:mb-14 sm:mb-24'>
                 {/* live project button */}
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
