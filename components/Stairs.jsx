@@ -5,17 +5,14 @@ import { motion } from 'motion/react';
 const stairAnimation = {
     initial: {
         top: "0%",
-        opacity: 1,
     },
     animate: {
         top: "100%",
-        opacity: 0,
     },
     exit: {
         top: ["100%", "0%"],
-        opacity: 0,
     },
-};
+}
 
 const reverseIndex = (index) => {
     const totalSteps = 6;
@@ -44,7 +41,7 @@ const Stairs = () => {
                             ease: "easeInOut",
                             delay: reverseIndex(index) * 0.1,
                         }}
-                        className="h-full w-full bg-white absolute"
+                        className="h-full w-full bg-white relative py"
                     />)
             })}
 
