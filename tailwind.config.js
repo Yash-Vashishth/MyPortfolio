@@ -15,9 +15,9 @@ module.exports = {
       padding: "15px",
     },
     screens: {
-      sm: "640px",
-      md: "768px", 
-      lg: "960px",
+      sm: "800px",
+      md: "900px", 
+      lg: "1100px",
       xl: "1200px",
     },
     fontFamily: {
