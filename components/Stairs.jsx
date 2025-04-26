@@ -27,24 +27,25 @@ const Stairs = () => {
             The delay for each div is calculated sinomically based on its reversed 
             creating a staggered effect wit decreasing delay for each subsequent step  
             */}
-
-            {[...Array(6)].map((_, index) => {
-                return (
-                    <motion.div
-                        key={index}
-                        variants={stairAnimation}
-                        initial="initial"
-                        animate="animate"
-                        exit="exit"
-                        transition={{
-                            duration: 0.4,
-                            ease: "easeInOut",
-                            delay: reverseIndex(index) * 0.1,
-                        }}
-                        className="h-full w-full bg-white relative "
-                    />)
-            })}
-
+            <div className="relative h-full w-full overflow-hidden">
+                {[...Array(6)].map((_, index) => {
+                    return (
+                        <motion.div
+                            key={index}
+                            variants={stairAnimation}
+                            initial="initial"
+                            animate="animate"
+                            exit="exit"
+                            transition={{
+                                duration: 0.4,
+                                ease: "easeInOut",
+                                delay: reverseIndex(index) * 0.1,
+                            }}
+                            className="h-full w-full bg-white relative "
+                        />
+                    )
+                })}
+            </div>
         </>
     );
 };
