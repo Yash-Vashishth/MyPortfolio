@@ -47,12 +47,12 @@ const experience = {
     {
       company: "Defence Research and Development Organisation",
       position: "Summer Research Intern",
-      duration: "16 June 2025 - 17 July 2025",
+      duration: "June 2025 -  July 2025",
     },
     {
       company: "Clean Green Health Foundation",
       position: "Content Team Member",
-      duration: "1 April 2025 - 1 August 2025",
+      duration: "April 2025 - August 2025",
     }
   ]
 }
@@ -152,7 +152,7 @@ const Resume = () => {
       <div className='container mx-auto'>
         <Tabs defaultValue='experience' className='flex flex-col xl:flex-row gap-[60px]'>
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            {/*<TabsTrigger> Experience </TabsTrigger>*/}
+            <TabsTrigger value="experience"> Experience </TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
@@ -173,7 +173,6 @@ const Resume = () => {
                           <span className='text-accent'>{item.duration}</span>
                           <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.position}</h3>
                           <div className='flex items-center gap-3'>
-                            dot
                             <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
                             <p className='text-white/60'>{item.company}</p>
                           </div>
